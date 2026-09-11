@@ -1,13 +1,11 @@
-class Dog:
-    def __init__(self,breed):
-        self.breed=input("Enter breed:")
-        print("woof woof")
-
-
-class owner:
-    def __init__(self,):
+class Person:
+    def __init__(self):
         self.name = input("Enter your name: ")
+        self.age = input("Enter your age: ")
 
+    def greet(self):
+        print(f"hello my name is {self.name}")
 
-ownername= owner()
-dog1= Dog(ownername.name)
+person1=Person()
+
+print(person1.name,person1.age)
