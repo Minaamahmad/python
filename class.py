@@ -1,11 +1,24 @@
 class Person:
-    def __init__(self):
-        self.name = input("Enter your name: ")
-        self.age = input("Enter your age: ")
+    def __init__(self, email , password):
+        self._email = email
+        self.password = password
+        print(f"Profile Created for {email}")
 
-    def greet(self):
-        print(f"hello my name is {self.name}")
+    def get_email(self):
+            return self._email
 
-person1=Person()
+    def set_email(self, new_email):
+            if "@" in new_email:
+                self._email = new_email
+            else:
+                print("Invalid Email")
 
-print(person1.name,person1.age)
+person1 = Person("dan@gmail.com", "danny123@")
+
+print(person1.get_email())
+
+person1.set_email("Person@gmail.com")
+
+print(person1.get_email())
+
+
