@@ -31,9 +31,14 @@ if person1.email:
      if forgotpass == "Y":
           new_pass = input("Enter new Passord: ")
           person1.password= new_pass
-     if new_pass ==user_pass:
-          print("Old Password")
-
+          print("Password Changed")
+          if new_pass == person1.password:
+               print("Cannot use old password")
+     elif forgotpass =="N":
+          print("Account Created ")
+          print(f"Email: {user_email} ")
+          print(f"Password: {user_pass}")
+        
     
 
           
