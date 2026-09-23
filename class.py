@@ -1,5 +1,7 @@
-array = [(2,10),(2,1),(8,3),(-2,0),(1,-4),(7,5),]
+import numpy as np
 
-sorted_array = sorted(array, key=lambda x:x[0]  )
-print(array)
-print(sorted_array)
+
+
+a = np.array([(1,24,56,6),(5,7,8,9)])
+print(a)
+print(a[1,1])
