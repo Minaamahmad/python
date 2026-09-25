@@ -1,7 +1,26 @@
-import numpy as np
+list = [2,4,6,7,24,1,5,0,8,89]
 
 
 
-a = np.array([(1,24,56,6),(5,7,8,9)])
-print(a)
-print(a[1,1])
+def value(L, n):
+    minValue = L[0]
+    
+    counter = 1
+    
+    while counter <= n:
+        v = L[counter]
+        if v <=minValue:
+            minValue = v
+          
+        counter +=1
+    return minValue
+         
+        
+  
+        
+print(value(list , 9))
+    
+    
+    
+        
+    
