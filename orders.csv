@@ -39,3 +39,5 @@ OrderID,CustomerName,Product,Category,Quantity,Price,OrderDate,Shipped,Country
 1038,Leila Mansouri,Desk Pad,Furniture,1,28.0,2024-07-09,Yes,Iran
 1039,Daniel Kim,Power Strip,Electronics,2,18.0,2024-07-10,No,South Korea
 1040,Anna Ivanova,Desk Clock,Furniture,1,35.0,2024-07-11,Yes,Ukraine
+1041,Anna Ivanova,Desk Table,Furniture,0,0,2024-07-11,No,Ukraine
+
